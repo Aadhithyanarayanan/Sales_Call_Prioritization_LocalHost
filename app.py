@@ -17,8 +17,8 @@ if ENV == 'dev':
     app.config['SQLALCHEMY_BINDS'] = {'two': 'postgresql://postgres:1234@localhost/postgres'}
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://htyymiczrekitp:6f9ad1880f889b0b2d17f5eabe3bc411f425e4318bfeda0a16ae3c69197f846b@ec2-54-157-15-228.compute-1.amazonaws.com:5432/dftcdeumn044eg'
-    app.config['SQLALCHEMY_BINDS'] = {'two': 'postgres://htyymiczrekitp:6f9ad1880f889b0b2d17f5eabe3bc411f425e4318bfeda0a16ae3c69197f846b@ec2-54-157-15-228.compute-1.amazonaws.com:5432/dftcdeumn044eg'}
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://htyymiczrekitp:6f9ad1880f889b0b2d17f5eabe3bc411f425e4318bfeda0a16ae3c69197f846b@ec2-54-157-15-228.compute-1.amazonaws.com:5432/dftcdeumn044eg'
+    app.config['SQLALCHEMY_BINDS'] = {'two': 'postgresql://htyymiczrekitp:6f9ad1880f889b0b2d17f5eabe3bc411f425e4318bfeda0a16ae3c69197f846b@ec2-54-157-15-228.compute-1.amazonaws.com:5432/dftcdeumn044eg'}
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 

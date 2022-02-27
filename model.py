@@ -28,7 +28,7 @@ def model_function():
     X_train = st_X.fit_transform(X_train)
     X_test = st_X.transform(X_test)
 
-    classifier = KNeighborsClassifier(n_neighbors=7, metric='minkowski', p=2)
+    classifier = KNeighborsClassifier(n_neighbors=6, metric='minkowski', p=2)
     classifier.fit(X_train, y_train)
 
     predict = classifier.predict(X_test)
